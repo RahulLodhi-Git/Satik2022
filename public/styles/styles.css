@@ -9,7 +9,6 @@ html {
 }
 
 body {
-    padding-top: 3.5rem;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -90,4 +89,132 @@ body {
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
+}
+
+a {
+    transition:all 0.3s linear;
+}
+
+
+a:hover {
+    color: #F51414;
+}
+
+
+/* custom css */
+/* navBand */
+.top-band {
+    padding: 10px 0;
+}
+
+.top-band ul>li>a {
+    text-decoration: none;
+    color: #fff;
+}
+.top-band ul.contact_info>li>a >i {
+    margin-right: 8px;
+}
+
+.top-band ul>li:not(:last-child) {
+    margin-right: 10px;
+}
+
+.top-band ul>li>a:hover {
+    color: #F51414;
+}
+
+/* home Banner */
+
+section#hero {
+    position: relative;
+    overflow: hidden;
+    min-height: 250px;
+}
+
+section#hero .row {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+section#hero .banner-image img {
+    max-width: 100%;
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+
+/* Footer */
+.log-wrap img {
+    max-width: 145px;
+    width: 100%;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul>li>a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+footer {
+    background-color: #0e0e0e;
+    background-color: #101010;
+}
+
+footer .f_link h6 {
+    font-weight: 700;
+    font-size: 18px;
+    display: inline-block;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #c10808;
+}
+
+footer .content p {
+    font-size: 14px;
+}
+
+footer ul>li {margin-bottom: 3px;}
+footer ul>li {
+    margin-bottom: 5px;
+}
+
+.get-in-touch ul>li a {
+    padding-left: 20px;
+}
+
+footer .get-in-touch ul>li>a {
+    padding-left: 30px;
+}
+
+ul.get-in-touch >li>a,
+ul.get-in-touch >li>p {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 0;
+}
+
+ul.get-in-touch >li>a >i,
+ul.get-in-touch >li>p>i {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    font-size: 18px;
+}
+ul.get-in-touch >li>p>i {
+    top:5px
+}
+
+
+/* maintance banner */
+.maintance-wrap img{
+    max-width: 500px;
 }
