@@ -91,3 +91,19 @@ ul.contact-us>li {
 ul.contact-us>li>a:hover {
   color: #c10808;
 }
+
+
+.form input,.form textarea, .form .input {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 8px 15px;
+  border: 1px solid #c1c0c0;
+  transition: all .2s linear;
+}
+
+.form input:focus, .form textarea:focus, .form .input:focus {
+  border: 1px solid #c10808;
+  outline: none;
+}
+
