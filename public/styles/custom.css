@@ -7,4 +7,48 @@
   .top-band ul>li {
     display: inline-block;
   }
+
+  img, svg {
+    vertical-align: middle;
+    max-width: 100%;
+}
+.border-left {
+  border-left: 6px solid #C10808;
+  color: #000;
+  display: inline-block;
+  padding: 8px 20px;
   
+}
+
+.testimonials-wrap{
+  overflow: hidden;
+  background-image: url('https://imperialitforweb.com/stewartindustrial/wp-content/uploads/2021/05/banner01.jpg');
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.testimonials-wrap .author-img img {
+  max-width: 100px;
+  border-radius: 64%;
+}
+
+
+img.clients-logo {
+  max-width: 150px;
+}
+.our-clients  {
+  overflow: hidden;
+}
+.oc_swiper-pagination{
+  width: 80px;
+    margin: 0 auto;
+    margin-top: 25px;
+    transform: none!important;
+}
+body .swiper-pagination-bullet-active {
+  background-color: #c10808d1;
+  width: 20px;
+  height: 6px;
+  border-radius: 5px;
+}

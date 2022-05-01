@@ -46,6 +46,9 @@ router.post('/login', passport.authenticate('local', {successRedirect: '/', fail
 router.get('/privacy', (req, res) => {
     res.render('privacy');
 });
+router.get('/about-us', (req, res) => {
+    res.render('about');
+});
 
 router.get('/tos', (req, res) => {
     res.render('tos');
