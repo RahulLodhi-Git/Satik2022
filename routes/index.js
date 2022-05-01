@@ -49,6 +49,9 @@ router.get('/privacy', (req, res) => {
 router.get('/about-us', (req, res) => {
     res.render('about');
 });
+router.get('/contact-us', (req, res) => {
+    res.render('contact');
+});
 
 router.get('/tos', (req, res) => {
     res.render('tos');

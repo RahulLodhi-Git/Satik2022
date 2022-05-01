@@ -1,28 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <%- include('layouts/head'); %>
+
+<head>
+  <%- include('layouts/head'); %>
 
     <!-- Home Specific Tags -->
     <meta name="description" content="Electric Shop-About us " />
-    <link
-      rel="canonical"
-      href="https://starter-node-express-bootstrap.herokuapp.com/"
-    />
+    <link rel="canonical" href="https://starter-node-express-bootstrap.herokuapp.com/" />
 
     <!-- Facebook: https://developers.facebook.com/docs/sharing/webmasters/ -->
-    <meta
-      property="og:url"
-      content="https://starter-node-express-bootstrap.herokuapp.com/"
-    />
-    <meta
-      property="og:title"
-      content="Alectrify - Bootstrap Node.js/Express Template"
-    />
-    <meta
-      property="og:description"
-      content="Express, MongoDB, and Node.js template stylized with Bootstrap."
-    />
+    <meta property="og:url" content="https://starter-node-express-bootstrap.herokuapp.com/" />
+    <meta property="og:title" content="Alectrify - Bootstrap Node.js/Express Template" />
+    <meta property="og:description" content="Express, MongoDB, and Node.js template stylized with Bootstrap." />
     <meta property="og:type" content="website" />
     <!-- Insert preview image tag: https://ogp.me/ -->
 
@@ -30,30 +19,51 @@
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@alectrify_co" />
     <meta name="twitter:creator" content="@alectrify_co" />
-    <meta
-      name="twitter:title"
-      content="Alectrify - Bootstrap Node.js/Express Template"
-    />
-    <meta
-      name="twitter:description"
-      content="Express, MongoDB, and Node.js template stylized with Bootstrap."
-    />
+    <meta name="twitter:title" content="Alectrify - Bootstrap Node.js/Express Template" />
+    <meta name="twitter:description" content="Express, MongoDB, and Node.js template stylized with Bootstrap." />
     <!-- Insert preview image tag -->
 
     <title>Satik Electric-About-us</title>
-  </head>
-  <body>
-    <%- include('layouts/navbar'); %>
-    <main>
-        <!-- Hero section -->
-        <section class="inner-banner">
-            <div class="container">
-                <h1>About Us</h1>
+</head>
+
+<body>
+  <%- include('layouts/navbar'); %>
+    <main id="about-us">
+      <!-- Hero section -->
+      <section class="inner-banner">
+        <div class="container">
+          <div class="title text-start">
+            <h1 class="text-white wow fadeInUp display-5 fw-bold">About Us</h1>
+            <h5 class="text-white"></h5>
+          </div>
+        </div>
+      </section>
+      <!-- Main content -->
+      <section class="py-5 my-5 px-3">
+        <div class="container">
+            <div class="col-md-10 mx-auto">
+              <h2 class="fw-bold border-left mb-4">Introduction</h2>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure commodi ad vel consequuntur assumenda sint adipisci, explicabo fuga reprehenderit qui quod accusantium nemo facere voluptas dicta quis pariatur maxime! Ab! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque earum dolorem veritatis ab cupiditate, doloribus vel? Harum iste dolores minima ab nihil, accusantium delectus modi non maxime enim inventore corrupti.</p>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet maxime sapiente sed temporibus eligendi asperiores, cumque, hic autem consequatur repudiandae nam fugiat ratione corrupti ipsam? Quis voluptatibus nam beatae cumque a sapiente dignissimos. Necessitatibus a nisi accusamus ipsum, dolore veniam minus quaerat eligendi veritatis dolorem. Iure minima quidem nam voluptate debitis cum et accusantium, suscipit distinctio mollitia? Voluptatum quas maiores sapiente dolores maxime libero, est impedit dicta adipisci tenetur, praesentium delectus dolorum aut ducimus eveniet id inventore minima eius assumenda consequatur magnam corporis. Unde sint dolorem voluptas molestiae magni illo, a sapiente fugiat inventore magnam quisquam maiores perspiciatis excepturi voluptatibus, libero maxime? </p>
+
+              <h4 class="fw-bold border-left my-4">Products We Offered</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores consectetur eligendi laboriosam placeat, accusantium fugiat? Omnis quaerat delectus voluptate reiciendis quae impedit similique eveniet, id qui sunt mollitia rem error quidem est. Ipsa omnis dolorum perspiciatis aliquid quaerat, eius at quis deleniti maiores! Ducimus itaque aperiam nisi. Mollitia debitis nam itaque ratione fugit perferendis distinctio enim perspiciatis, sed necessitatibus voluptatibus quaerat id ducimus minus pariatur aliquid voluptates voluptas quae molestiae.</p>
+
+              <h4 class="fw-bold border-left my-4">Customer's Benefits</h4>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores consectetur eligendi laboriosam placeat, accusantium fugiat? Omnis quaerat delectus voluptate reiciendis quae impedit similique eveniet, id qui sunt mollitia rem error quidem est. Ipsa omnis dolorum perspiciatis aliquid quaerat, eius at quis deleniti maiores! Ducimus itaque aperiam nisi. Mollitia debitis nam itaque ratione fugit perferendis distinctio enim perspiciatis, sed necessitatibus voluptatibus quaerat id ducimus minus pariatur aliquid voluptates voluptas quae molestiae.</p>
             </div>
-        </section>
-        <%- include('layouts/footer'); %>
+          </div>
+
+
+           
+        </div>
+       
+
+      </section>
+      <%- include('layouts/footer'); %>
     </main>
     <!-- Bundled JS: Bootstrap, jQuery, Lodash -->
     <script src="/scripts/bundle.js"></script>
-  </body>
+</body>
+
 </html>
