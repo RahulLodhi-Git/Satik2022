@@ -1,33 +1,36 @@
 .top-band ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .top-band ul>li {
-    display: inline-block;
-  }
-
-  img, svg {
-    vertical-align: middle;
-    max-width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
+
+.top-band ul>li {
+  display: inline-block;
+}
+
+img,
+svg {
+  vertical-align: middle;
+  max-width: 100%;
+}
+
 .border-left {
   border-left: 6px solid #C10808;
   color: #000;
   display: inline-block;
   padding: 8px 20px;
-  
+
 }
 
-.testimonials-wrap{
+.testimonials-wrap {
   overflow: hidden;
   background-image: url('https://imperialitforweb.com/stewartindustrial/wp-content/uploads/2021/05/banner01.jpg');
   background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
+
 .testimonials-wrap .author-img img {
   max-width: 100px;
   border-radius: 64%;
@@ -37,21 +40,25 @@
 img.clients-logo {
   max-width: 150px;
 }
-.our-clients  {
+
+.our-clients {
   overflow: hidden;
 }
-.oc_swiper-pagination{
+
+.oc_swiper-pagination {
   width: 80px;
-    margin: 0 auto;
-    margin-top: 25px;
-    transform: none!important;
+  margin: 0 auto;
+  margin-top: 25px;
+  transform: none !important;
 }
+
 body .swiper-pagination-bullet-active {
   background-color: #c10808d1;
   width: 20px;
   height: 6px;
   border-radius: 5px;
 }
+
 /* About us */
 section.inner-banner {
   text-align: center;
@@ -93,7 +100,9 @@ ul.contact-us>li>a:hover {
 }
 
 
-.form input,.form textarea, .form .input {
+.form input,
+.form textarea,
+.form .input {
   display: block;
   width: 100%;
   margin-bottom: 20px;
@@ -102,8 +111,143 @@ ul.contact-us>li>a:hover {
   transition: all .2s linear;
 }
 
-.form input:focus, .form textarea:focus, .form .input:focus {
+.form input:focus,
+.form textarea:focus,
+.form .input:focus {
   border: 1px solid #c10808;
   outline: none;
 }
 
+/* navbar */
+ul.level-2,
+ul.level-3 {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  padding: 10px;
+  width: 100%;
+  min-width: 200px;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.navbar-expand-md .navbar-nav .nav-link i {
+  font-size: 12px;
+  margin-left: 3px;
+}
+
+.navbar {
+  z-index: 99;
+}
+
+ul.navbar-nav>li {
+  position: relative;
+}
+
+ul.navbar-nav>li:hover .level-2 {
+  opacity: 1;
+  visibility: visible;
+}
+
+ul.level-2>li {
+  padding: 3px;
+}
+
+
+
+
+
+@media (max-width:768px) {
+  .navbar-nav img {
+    display: none
+  }
+}
+
+@media(min-width: 768px) {
+  ul.level-2 {
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    top: 41px;
+    left: -50%;
+  }
+
+  .product ul.level-2 {
+    width: 100%;
+    display: flex;
+    min-width: 280px;
+    padding: 15px 10px;
+    justify-content: space-evenly;
+  }
+
+  .product ul.level-2>li:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .product ul.level-2 p {
+    margin: 8px auto 0 auto;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  .product ul.level-3 {
+    width: 100%;
+    display: flex;
+    min-width: 280px;
+    padding: 15px 10px;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0;
+    position: absolute;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    background-color: #fff;
+    left: 0;
+    top: 0;
+    flex-wrap: wrap;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+
+  .container {
+    position: relative;
+  }
+
+  .product ul.level-3 p {
+    text-align: center;
+    margin: 9px 0 0 0;
+  }
+
+  .product ul.level-3>li>a {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .product ul.level-3>li:not(:last-child) {
+    margin-right: 20px;
+    margin-bottom: 25px;
+  }
+
+  ul.navbar-nav>li.child-show {
+    position: unset;
+  }
+
+
+
+  ul.level-2>li.--active .level-3 {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .product ul.level-3>li>:hover {
+    transform: scale(1.035);
+  }
+  .product.child-show ul.level-2 {
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+    top: 75px;
+}
+
+
+}

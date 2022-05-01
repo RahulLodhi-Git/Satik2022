@@ -4,3 +4,4 @@ function shortPageFooter() {
         $('footer').addClass('fixed-bottom');
     }
 }
+
