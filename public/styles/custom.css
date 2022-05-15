@@ -157,11 +157,52 @@ ul.level-2>li {
 
 
 
-
 @media (max-width:768px) {
   .navbar-nav img {
     display: none
   }
+
+  ul.level-2,
+  ul.level-3 {
+    visibility: visible;
+    opacity: 1;
+    display: none;
+    padding: 5px;
+  }
+
+  .navbar-expand-md .navbar-nav .nav-link i {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+  }
+
+  ul.level-2 p,
+  ul.level-3 p {
+    margin-bottom: 3px;
+  }
+
+  .level-2>li {
+    position: relative;
+  }
+
+  .level-2>li>a i {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 5px;
+    font-size: 10px;
+
+  }
+
 }
 
 @media(min-width: 768px) {
@@ -175,9 +216,10 @@ ul.level-2>li {
   .product ul.level-2 {
     width: 100%;
     display: flex;
-    min-width: 280px;
+    min-width: 530px;
     padding: 15px 10px;
     justify-content: space-evenly;
+    left: -300px;
   }
 
   .product ul.level-2>li:not(:last-child) {
@@ -209,7 +251,7 @@ ul.level-2>li {
   }
 
 
-  .container {
+  header .container {
     position: relative;
   }
 
@@ -242,12 +284,15 @@ ul.level-2>li {
   .product ul.level-3>li>:hover {
     transform: scale(1.035);
   }
+
   .product.child-show ul.level-2 {
     opacity: 1;
     visibility: visible;
     left: 0;
     top: 75px;
-}
+  }
 
-
+  .level-2>li>a i {
+    display: none;
+  }
 }
