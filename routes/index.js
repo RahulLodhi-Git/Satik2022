@@ -57,6 +57,17 @@ router.get('/tos', (req, res) => {
     res.render('tos');
 });
 
+router.get('/products/:cat', (req, res) => {
+    res.render('product-listing');
+});
+router.get('/product-detail/:prodId', (req, res) => {
+    res.render('product-detail');
+});
+
+router.get('/admin',(req,res)=>{
+    res.render('admin')
+})
+
 /* ----- USER ROUTES ----- */
 router.get('/logout', auth.isAuthenticated, (req, res) => {
     req.logout();
