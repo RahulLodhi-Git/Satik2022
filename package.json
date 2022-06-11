@@ -13,7 +13,7 @@
     "build:css": "sass src/bootstrap.scss public/styles/bootstrap.css && postcss public/styles/styles.css --use autoprefixer -o public/styles/styles.css",
     "build:js": "webpack --mode=production",
     "build": "npm run build:css && npm run build:js",
-    "start": "node index.js"
+    "start": "nodemon index.js"
   },
   "author": "Alectrify Software",
   "dependencies": {
@@ -36,11 +36,14 @@
     "helmet": "^4.4.1",
     "jquery": "^3.5.1",
     "jsdom": "^16.4.0",
+    "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.20",
     "method-override": "^3.0.0",
     "mongoose": "^5.12.2",
     "morgan": "^1.10.0",
     "multer": "^1.4.2",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.16",
     "passport": "^0.4.1",
     "passport-local": "^1.0.0",
     "postcss": "^8.2.4",

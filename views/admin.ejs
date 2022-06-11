@@ -3,54 +3,58 @@
 
 <head>
     <%- include('layouts/head'); %>
-
         <!-- Home Specific Tags -->
-        <meta name="description" content="Electric Shop " />
-        <link rel="canonical" href="https://starter-node-express-bootstrap.herokuapp.com/" />
+        <meta name="description" content="Admin || Satik Electic" />
+        <link rel="canonical" href="https://satikelectric.co.in/" />
 
         <!-- Facebook: https://developers.facebook.com/docs/sharing/webmasters/ -->
-        <meta property="og:url" content="https://starter-node-express-bootstrap.herokuapp.com/" />
-        <meta property="og:title" content="Alectrify - Bootstrap Node.js/Express Template" />
-        <meta property="og:description" content="Express, MongoDB, and Node.js template stylized with Bootstrap." />
+        <meta property="og:url" content="https://satikelectric.co.in/" />
+        <meta property="og:title"
+            content="Admin - Satik Electric Pvt Ltd is the manufacturer and distributor of Electrical Equipment in India. With our “One Stop Shop” approach" />
+        <meta property="og:description"
+            content="Satik Electric Pvt Ltd is the manufacturer and distributor of Electrical Equipment in India. With our “One Stop Shop” approach" />
         <meta property="og:type" content="website" />
         <!-- Insert preview image tag: https://ogp.me/ -->
 
         <!-- Twitter: https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup -->
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="@alectrify_co" />
-        <meta name="twitter:creator" content="@alectrify_co" />
-        <meta name="twitter:title" content="Alectrify - Bootstrap Node.js/Express Template" />
-        <meta name="twitter:description" content="Express, MongoDB, and Node.js template stylized with Bootstrap." />
+        <meta name="twitter:site" content="@Satik_Electric" />
+        <meta name="twitter:creator" content="@Satik_Electric" />
+        <meta name="twitter:title"
+            content="Admin - Satik Electric Pvt Ltd is the manufacturer and distributor of Electrical Equipment in India. With our “One Stop Shop” approach" />
+        <meta name="twitter:description"
+            content="Satik Electric Pvt Ltd is the manufacturer and distributor of Electrical Equipment in India. With our “One Stop Shop” approach" />
         <!-- Insert preview image tag -->
 
-        <title>Satik Electric - Admin
-        </title>
+        <title>Admin || Satik Electric</title>
 </head>
+
 <body>
-<main>
-    <div class="admin-wrap">
-        <div class="container">
-            <div class="row admin">
-                <div class="col-md-4 mx-auto admin-inner">
-                    <div class="logo mb-2">
-                        <a href="/">
-                            <img src="/assets/logo.png"  width="150p" alt="Satik electric">
-                        </a>
-                    </div>
-                    <h3 class="mb-4">Admin Login</h3>
-                    <div class="admin-form form  ">
-                        <form action="" method="post">
-                          
-                            <input type="email" name="email" id="email" placeholder="Enter email" required>
-                            <input type="password" name="password" id="password" placeholder="Enter password " required>
-                            <button type="submit " class="btn btn-primary rounded-0 px-4 py-1 my-2">Login</button>
-                          </form>
+    <main>
+        <div class="admin-wrap">
+            <div class="container">
+                <div class="row admin">
+                    <div class="col-md-4 mx-auto admin-inner">
+                        <div class="logo mb-2">
+                            <a href="/">
+                                <img src="/assets/logo.png" width="150p" alt="Satik electric">
+                            </a>
+                        </div>
+                        <h3 class="mb-4">Admin Login</h3>
+                        <div class="admin-form form  ">
+                            <form action="/api/login" method="post">
+
+                                <input type="email" name="email" id="email" placeholder="Enter email" required>
+                                <input type="password" name="password" id="password" placeholder="Enter password "
+                                    required>
+                                <button type="submit " class="btn btn-primary rounded-0 px-4 py-1 my-2">Login</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</main>
+    </main>
 </body>
 
 

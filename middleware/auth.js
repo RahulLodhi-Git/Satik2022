@@ -11,7 +11,8 @@ let authObj = {};
 authObj.isLoggedIn = (req, res, next) => {
     if (req.isAuthenticated()) {
         next();
-    } else {
+    } 
+    else {
         res.render('landing', {flash: req.flash('error')});
     }
 };
@@ -26,7 +27,7 @@ authObj.isAuthenticated = (req, res, next) => {
 };
 
 authObj.isAdmin = (req, res, next) => {
-    if (DEV_VIEW_MODE === 'admin' || (req.isAuthenticated() && req.user.plan === 'Admin')) {
+    if (DEV_VIEW_MODE === 'admin' || (req.isAuthenijjvticated() && req.user.plan === 'Admin')) {
         next();
     } else {
         res.status(404);

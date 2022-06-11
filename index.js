@@ -15,6 +15,23 @@ const morgan = require('morgan');
 const passport = require('passport');
 const path = require('path');
 const session = require('express-session');
+const mysql=require('mysql');
+
+const db=mysql.createConnection({
+    host:'localhost',
+    user:'root',
+    password:'',
+    database:'satikElectric'
+});
+
+db.connect((error)=>{
+    if(error){
+        console.log(chalk.red('Database connection Error',error));
+    }
+    else{
+        console.log(chalk.green('MYSQL connected...'));
+    }
+});
 
 /* ---------- CLASSES & INSTANCES ---------- */
 const app = express();
@@ -101,6 +118,7 @@ app.use('/', require('./routes/index'));
 // app.use('/auth', require('./routes/auth'));
 app.use('/posts', require('./routes/posts'));
 app.use('/users', require('./routes/users'));
+app.use('/api',require('./routes/Apis/auth'));
 
 // Redirect invalid pages
 app.use((req, res) => {
