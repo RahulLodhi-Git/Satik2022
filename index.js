@@ -141,3 +141,7 @@ app.listen(PORT, () => {
     console.log(chalk.blue(`🚀 Server running at http://localhost:${PORT}/`));
     console.log(chalk.green('📝 Setup and details for developing this project: https://github.com/alectrify/starter-node-express-bootstrap\n'));
 });
+
+module.exports={
+    db:db
+}

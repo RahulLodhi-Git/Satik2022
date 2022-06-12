@@ -654,11 +654,11 @@
     </div>
   </nav>
 </header>
-
 <% if (!locals.user) { %>
 
 <!-- Flash Alert -->
-<% if (locals.flash && flash.length> 0) { %> <% flash.forEach((message)=> { %>
+<% 
+if (locals.flash && flash.length> 0) { %> <% flash.forEach((message)=> { %>
 <div
   class="alert alert-danger alert-dismissible fade show fixed-top mt-3 ms-3 d-inline-block w-25"
   role="alert"
