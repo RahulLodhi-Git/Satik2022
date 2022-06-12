@@ -24,13 +24,16 @@ svg {
 
 .testimonials-wrap {
   overflow: hidden;
-  background-image: url('https://imperialitforweb.com/stewartindustrial/wp-content/uploads/2021/05/banner01.jpg');
+  background-image: url('/assets/jtm-services-banner.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
+.testimonials-wrap .border-left {
+  color: #fff;
+}
 .testimonials-wrap .author-img img {
   max-width: 100px;
   border-radius: 64%;
@@ -67,7 +70,7 @@ section.inner-banner {
   padding: 80px 0;
   position: relative;
   background-color: #fb4c4cd4;
-  background-image: url(http://imperialitforweb.com/stewartindustrial/wp-content/uploads/2021/05/inner-banner.jpg);
+  background-image: url('/assets/jtm-services-banner.jpg');
   padding-top: 200px;
   padding-bottom: 60px;
 }

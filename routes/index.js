@@ -4,6 +4,7 @@ const auth = require('../middleware/auth');
 const express = require('express');
 const passport = require('passport');
 
+
 /* ---------- CLASSES & INSTANCES ---------- */
 const router = express.Router();
 const User = require('../models/User');
@@ -65,8 +66,8 @@ router.get('/product-detail/:prodId', (req, res) => {
 });
 
 router.get('/admin',(req,res)=>{
-    res.render('admin')
-})
+    res.render('admin');
+});
 
 /* ----- USER ROUTES ----- */
 router.get('/logout', auth.isAuthenticated, (req, res) => {
@@ -81,5 +82,12 @@ router.get('/profile', auth.isAuthenticated, (req, res) => {
 router.get('/settings', auth.isAuthenticated, (req, res) => {
     res.render('users/settings', {user: req.user, flash: req.flash('settings')});
 });
+
+// router.get('/sitemap.xml', (req,res) => {
+//     const rssFile = fs.readFileSync(__dirname + '/sitemap.xml', { encoding: 'utf8' });
+//     console.log('FILE', rssFile);
+//     res.set('Content-Type', 'text/xml');
+//     res.send(rssFile);
+// });
 
 module.exports = router;
