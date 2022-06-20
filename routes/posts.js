@@ -59,6 +59,7 @@ router.post('/', auth.isAuthenticated, upload.single('image'), async (req, res, 
     post.save((err) => {
         // Check for invalid user input.
         if (err) {
+            res.render('users/posts', {posts, user: req.user, flash: req.flash('posts')});
             req.flash('posts', err.message);
             return res.status(409).redirect('/posts');
         }

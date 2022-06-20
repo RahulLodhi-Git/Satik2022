@@ -11,6 +11,9 @@ html {
 body {
     font-family: 'Roboto', sans-serif;
 }
+a{
+    text-decoration: none;
+}
 
 /* ----- UTILITIES ----- */
 /* --- POSITION --- */
@@ -143,6 +146,7 @@ section#hero .banner-image img {
     max-width: 100%;
     width: 100%;
     max-height: 400px;
+    min-height: 250px;
     object-fit: cover;
 }
 
@@ -217,4 +221,19 @@ ul.get-in-touch >li>p>i {
 /* maintance banner */
 .maintance-wrap img{
     max-width: 500px;
+}
+
+@media (max-width:575px) {
+    .top-band{
+        padding: 7px 0;
+    }
+    .top-band ul{
+        text-align: center;
+    }
+    .top-band ul>li>a{
+        font-size: 14px;
+    }
+    ul.social-links >li>a{
+        font-size: 16px;
+    }
 }
